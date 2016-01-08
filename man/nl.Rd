@@ -23,4 +23,7 @@ nl({
   3
 })
 }
+\author{
+Based on an idea by Kevin Ushey
+}
 
