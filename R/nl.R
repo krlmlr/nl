@@ -9,6 +9,7 @@
 #'   3
 #' })
 #' @export
+#' @author Based on an idea by Kevin Ushey
 nl <- function(expr, envir = parent.frame()) {
   expr <- substitute(expr)
   envir <- new.env(parent = envir)
