@@ -19,3 +19,9 @@ test_that("error handling", {
   expect_error(nl(1), "brace")
   expect_error(nl(), "missing")
 })
+
+test_that("name clash", {
+  expected <- list(1)
+  list <- function(...) stop("Gotcha!")
+  expect_equal(nl({1}), expected)
+})

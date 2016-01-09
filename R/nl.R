@@ -18,6 +18,6 @@ nl <- function(expr, envir = parent.frame()) {
     stop("The expr argument must be a block surrounded by braces.",
          call. = FALSE)
   }
-  expr[[1L]] <- quote(list)
+  expr[[1L]] <- quote(base::list)
   eval(expr, envir = envir)
 }
