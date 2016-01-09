@@ -14,7 +14,7 @@ nl(expr, envir = parent.frame())
     a pairlist or an integer as specified to \code{\link{sys.call}}.}
 }
 \description{
-Newline-separated construction of lists
+This is an alternative syntax for constructing unnamed lists.
 }
 \examples{
 nl({

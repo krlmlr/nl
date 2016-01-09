@@ -1,5 +1,7 @@
 #' Newline-separated construction of lists
 #'
+#' This is an alternative syntax for constructing unnamed lists.
+#'
 #' @param expr A braced expression
 #' @inheritParams base::eval
 #' @examples
