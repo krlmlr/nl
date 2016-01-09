@@ -13,3 +13,4 @@ URLNote: https://github.com/krlmlr/nl
 BugReports: https://github.com/krlmlr/nl/issues
 URL: http://krlmlr.github.io/
 RoxygenNote: 5.0.1.9000
+Suggests: testthat
