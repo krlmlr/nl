@@ -12,6 +12,10 @@
 #' @author Based on an idea by Kevin Ushey
 nl <- function(expr, envir = parent.frame()) {
   expr <- substitute(expr)
-  envir <- new.env(parent = envir)
-  lapply(expr[-1], eval, envir = envir)
+  if (!identical(expr[[1L]], quote(`{`))) {
+    stop("The expr argument must be a block surrounded by braces.",
+         call. = FALSE)
+  }
+  expr[[1L]] <- quote(list)
+  eval(expr, envir = envir)
 }
