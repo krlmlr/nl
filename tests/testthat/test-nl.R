@@ -24,4 +24,7 @@ test_that("name clash", {
   expected <- list(1)
   list <- function(...) stop("Gotcha!")
   expect_equal(nl({1}), expected)
+
+  `::` <- function(...) stop("Gotcha again!")
+  expect_equal(nl({1}), expected)
 })
